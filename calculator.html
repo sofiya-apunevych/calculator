@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="calculator.css" />
+
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div id="all-in-one-box">
+      <div class="horizontal">
+        <div class="vertical" id="calculation-display">0</div>
+      </div>
+      <div class="horizontal">
+        <div class="button-usual btn-operator vertical" id="operator-AC">
+          AC
+        </div>
+        <div class="button-usual btn-operator vertical" id="operator-space">
+          <--
+        </div>
+        <div class="button-usual btn-operator vertical" id="operator-percent">
+          percent
+        </div>
+        <div
+          class="button-usual btn-operator-number vertical"
+          id="operator-division"
+        >
+          :
+        </div>
+      </div>
+
+      <div class="horizontal">
+        <div class="button-usual btn-number vertical" id="number-seven">7</div>
+        <div class="button-usual btn-number vertical" id="number-eight">8</div>
+        <div class="button-usual btn-number vertical" id="number-nine">9</div>
+        <div
+          class="button-usual btn-operator-number vertical"
+          id="operator-multiply"
+        >
+          x
+        </div>
+      </div>
+
+      <div class="horizontal">
+        <div class="button-usual btn-number vertical" id="number-four">4</div>
+        <div class="button-usual btn-number vertical" id="number-five">5</div>
+        <div class="button-usual btn-number vertical" id="number-six">6</div>
+        <div
+          class="button-usual btn-operator-number vertical"
+          id="operator-minus"
+        >
+          -
+        </div>
+      </div>
+
+      <div class="horizontal">
+        <div class="button-usual btn-number vertical" id="number-one">1</div>
+        <div class="button-usual btn-number vertical" id="number-two">2</div>
+        <div class="button-usual btn-number vertical" id="number-three">3</div>
+        <div
+          class="button-usual btn-operator-number vertical"
+          id="operator-plus"
+        >
+          +
+        </div>
+      </div>
+
+      <div class="horizontal">
+        <div class="button-usual btn-number vertical" id="function">F</div>
+        <div class="button-usual btn-number vertical" id="number-zero">0</div>
+        <div class="button-usual vertical" id="coma">.</div>
+        <div
+          class="button-usual btn-operator-number vertical"
+          id="operator-equals"
+        >
+          =
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="calculator.js"></script>
+
+    <!--
+    <script>
+      let buttonZero = document.getElementById('number-zero');
+      let buttonOne = document.getElementById('number-one');
+      let buttonTwo = document.getElementById('number-two');
+      let buttonThree = document.getElementById('number-three');
+      let buttonFour = document.getElementById('number-four');
+      let buttonFive = document.getElementById('number-five');
+      let buttonSix = document.getElementById('number-six');
+      let buttonSeven = document.getElementById('number-seven');
+      let buttonEigth = document.getElementById('number-eight');
+      let buttonNine = document.getElementById('number-nine');
+      let buttonComa = document.getElementById('coma');
+      let clearBtn = document.getElementById('operator-AC');
+      let backSpaceBtn = document.getElementById('operator-space');
+      let buttonPercent = document.getElementById('operator-percent');
+
+      let displayValElement = document.getElementById('calculation-display');
+
+      let calcNumBtns = document.getElementsByClassName('btn-number');
+      let calcOperatorBtns = document.getElementsByClassName(
+        'btn-operator-number'
+      );
+      let displayVal = '0';
+      let pendingVal;
+      let evalStringArray = [];
+
+      let updateDisplayVal = (clickObj) => {
+        let btnText = clickObj.target.innerText;
+        if (displayVal === '0') displayVal = '';
+
+        displayVal += btnText;
+        displayValElement.innerText = displayVal;
+      };
+
+      for (let i = 0; i < calcNumBtns.length; i++) {
+        calcNumBtns[i].addEventListener('click', updateDisplayVal, false);
+      }
+
+      /*
+    for (let i = o; i <calcOperatorBtns; i++) {
+      calcOperatorBtns[i].addEventListener('click', performOperation, false);
+    }
+    
+    
+    buttonSpace.onclick = () => {
+      displayVal = '0';
+      pendingVal = undefined;
+      evalStringArray = [];
+      displayValElement.innerHTML = displayVal;
+    };
+    */
+    </script>
+    -->
+  </body>
+</html>

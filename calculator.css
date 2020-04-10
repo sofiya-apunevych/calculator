@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+}
+
+.button-usual {
+  background-color: lightgreen;
+  color: green;
+  border: 2px solid green;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-usual:hover {
+  background-color: lightsalmon;
+}
+
+.horizontal {
+  display: table;
+  table-layout: fixed;
+  width: 400px;
+}
+
+.vertical {
+  display: table-cell;
+}
+
+#calculation-display {
+  width: 400px;
+  height: 60px;
+  color: green;
+  text-align: right;
+  border: 1px solid green;
+  font-size: 40px;
+  background-color: honeydew;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px;
+  border-radius: 7px 7px 0 0;
+}
+
+.btn-operator-number {
+  background-color: greenyellow;
+  color: green;
+}
+
+.all-in-one-box {
+  margin-left: calc(50% - 100px);
+}
